@@ -11,7 +11,7 @@ function ShoppingList({ API_URL }) {
     fetch(API_URL)
     .then(r => r.json())
     .then(items => setItems(items))
-  }, [items])
+  }, [])
 
   function handleCategoryChange(category) {
     setSelectedCategory(category);
